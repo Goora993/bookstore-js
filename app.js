@@ -12,19 +12,11 @@ mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() =>  console.log('Connected to db'))
     .catch((err) => console.log(err));
 
-
-//register view engine
-app.set('view engine', 'ejs');
-//in case if we want to have views in different dir
-// app.set('views', 'myviews')
-
 //listen for requests
 app.listen(3000);
 
 //middleware & static
 app.use(express.static('public'));
-
-//logging middleware
 app.use(morgan('dev'));
 
 // DB connection testing code
