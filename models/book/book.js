@@ -10,10 +10,6 @@ const bookSchema = new Schema({
         type: String,
         required: true
     },
-    ISBN: {
-        type: String,
-        required: true
-    },
     price: {
         type: Number,
         required: true

@@ -1,5 +1,6 @@
 const express = require('express');
 const morgan = require('morgan');
+const bodyParser = require('body-parser');
 const bookRoutes = require('./routes/bookRoutes');
 const dbConnection = require('./utils/dbConnection');
 
@@ -18,5 +19,6 @@ app.use(express.static('public'));
 app.use(morgan('dev'));
 
 //Book routes
+app.use(bodyParser.json());
 app.use(bookRoutes);
 
