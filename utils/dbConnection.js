@@ -9,6 +9,7 @@ function establishConnection() {
 }
 
 function prepareDbUri() {
+    console.log(`USERNAME: ${process.env.DB_USERNAME} || PASSWORD: ${process.env.DB_PASSWORD} || URL: ${process.env.DB_URL}`)
     return `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}${process.env.DB_URL}`;
 }
 
