@@ -17,6 +17,7 @@ app.listen(process.env.PORT);
 //Middleware & static
 app.use(express.static('public'));
 app.use(morgan('dev'));
+app.use(express.json());
 
 //Book routes
 app.use(bodyParser.json());
