@@ -32,7 +32,12 @@ Open console and make sure you are in the project directory. Then you need to us
 - Digitalized managing books
 
 ## REST Api specification
-
+- DB connection testing: GET /test
+- Get all books: GET /books
+- Get specific book by ID: GET /book/:id
+- Add new book: POST /book/add
+- Update book by ID: PATCH /update/:id
+- Delete book by ID: DELETE /delete/:id
 
 ## Database specification
 
