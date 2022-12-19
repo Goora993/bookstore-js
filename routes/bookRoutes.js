@@ -3,11 +3,6 @@ const bookController = require('../controller/bookController')
 
 const router = express.Router();
 
-// DB connection testing code
-router.get('/test', (req, res) => {
-    res.send('Hello, World!');
-})
-
 // Get all books from the store
 router.get('/books', bookController.getAllBooks)
 
