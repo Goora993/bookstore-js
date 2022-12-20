@@ -12,6 +12,8 @@ This is a demonstration CRUD project of a backend application designed to manage
 ### Running instruction
 Open console and make sure you are in the project directory. Then you need to use command ```npm install``` to install all needed dependencies. On the end command ```nodemon app``` to finally run the server.
 
+<br /> In addition, the application is available from the internet. It is deployed on the Render server and its address is https://dd-bookstore.onrender.com
+
 ### Requirements definitions
 #### Non-functional requirements
 - Cloud instance of database
@@ -58,7 +60,7 @@ Open console and make sure you are in the project directory. Then you need to us
     ```
 - Update book by ID: PATCH /update/:id
   - Attributes allowed to update:
-    -  title -> string
+    - title -> string
     - author -> string
     - price -> double
     - quantity -> integer
